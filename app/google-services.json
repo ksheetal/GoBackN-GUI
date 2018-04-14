@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "311406408814",
+    "firebase_url": "https://gobackn-ea95f.firebaseio.com",
+    "project_id": "gobackn-ea95f",
+    "storage_bucket": "gobackn-ea95f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311406408814:android:3bb8b802c288c5b7",
+        "android_client_info": {
+          "package_name": "com.example.sheetal.gobackn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311406408814-ogm6tvc40604ujtmadmesgcle5cs14of.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sheetal.gobackn",
+            "certificate_hash": "3bff03fcb802dc41951871acc6d60b10abd72f5e"
+          }
+        },
+        {
+          "client_id": "311406408814-aclv7ruqcupr03i01v0m762kgcc1sho3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYY8F9Igg8zFUmd6AgzEm0HtH-Cp0hth4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311406408814-aclv7ruqcupr03i01v0m762kgcc1sho3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
