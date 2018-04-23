@@ -1,5 +1,6 @@
 package com.example.sheetal.gobackn;
 
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
 
     EditText EPacket;
-    TextView TPacket;
+    TextView TPacket,Tcounter;
     Button  Bsend;
 
     DatabaseReference databaseReference;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Bsend = findViewById(R.id.button);
         EPacket = findViewById(R.id.editText);
         TPacket = findViewById(R.id.textView);
-
+        Tcounter= findViewById(R.id.textView2);
         databaseReference = FirebaseDatabase.getInstance().getReference("Data");
 
         Bsend.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +47,19 @@ public class MainActivity extends AppCompatActivity {
                      databaseReference.setValue(seprate[j]);
                  }*/
                 TPacket.setText(i);
+                CountDownTimer myCounter = new CountDownTimer(25000, 1000) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        Tcounter.setText("Seconds remaining :" + millisUntilFinished / 1000);
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        Tcounter.setText("Finish.");
+                    }
+                }.start();
+
 
             }
         });
